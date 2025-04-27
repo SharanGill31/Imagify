@@ -8,6 +8,7 @@ export const AppContext = createContext()
 const AppContextProvider = (props) => {
 
     const [showLogin, setShowLogin] = useState(false)
+    console.log(localStorage.getItem('token'))
     const [token, setToken] = useState(localStorage.getItem('token'))
     const [user, setUser] = useState(null)
 

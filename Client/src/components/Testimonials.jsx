@@ -22,8 +22,8 @@ const Testimonials = () => {
               <h2 className='text-xl font-semibold mt-3'>{testimonial.name}</h2>
               <p className='text-gray-500 mb-4'>{testimonial.role}</p>
               <div className='flex mb-4'>
-                {Array.from({ length: testimonial.stars }).map((_, starIndex) => ( // Corrected star rendering
-                  <img key={starIndex} src={assets.rating_star} alt="Rating Star" className="w-4 h-4 mr-1" /> // Added alt and styling
+                {Array.from({ length: testimonial.stars }).map((_, starIndex) => ( 
+                  <img key={starIndex} src={assets.rating_star} alt="Rating Star" className="w-4 h-4 mr-1" /> 
                 ))}
               </div>
               <p className="text-center text-sm text-gray-600">{testimonial.text}</p> 
